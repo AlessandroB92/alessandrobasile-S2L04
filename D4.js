@@ -2,7 +2,14 @@
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* let l1 = parseFloat(prompt("valore base"))
+let l2 = parseFloat(prompt("valore altezza"))
+let area = l1 * l2
+
+let calcolo = function(l1,l2){
+   (l1 * l2)
+}
+console.log(area) */
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -10,21 +17,57 @@
  la loro somma moltiplicata per tre.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* let a = parseInt(prompt("inserisci un numero"))
+let b = parseInt(prompt("inserisci un numero"))
+
+let crazySum = function(a, b){
+    if (a === b){
+       return (a + b) * 3
+    }
+    else {
+      return (a + b)
+    }
+}
+let risultato = crazySum(a, b)
+  console.log(risultato) */
+
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* let a = parseInt(prompt("inserisci un numero"))
+let b = 19
+
+let crazyDiff = function(a, b){
+    if (a <= b){
+        return Math.abs(a - b)
+    }
+    else if (a > b) {
+        return Mat.abs(a - b) * 3
+    }
+}
+let risultato = crazyDiff(a,b)
+console.log(risultato) */
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* let numero = parseInt(prompt("inserisci un numero"))
+
+let boundary = function(num){
+    if (numero >=20 && numero <= 100 ||numero === 400){
+        return true
+    }
+    else {
+        return false
+    }
+}
+let risultato = boundary()
+console.log(risultato) */
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -32,20 +75,45 @@
  ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* let frase = prompt("Scrivi qui")
+
+const epify = function(){
+    if (frase.startsWith("EPICODE")){
+    return frase
+    }
+    else {
+        return "EPICODE " + frase
+    }
+}
+console.log(epify()) */
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
+/* const numero = parseInt(prompt("inserisci un numero"))
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const check3and7 = function(){
+    if (numero % 3 === 0){
+        return "Il numero è un multiplo di 3"
+    }
+    else if (numero % 7 === 0) {
+        return "Il numero è un multiplo di 7"
+    }
+    else {
+        return "Il numero inserito non è multiplo ne di 3 ne di 7"
+    }
+}
+console.log(check3and7()) */
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* const frase = prompt("inserisci una parola")
+const reverseString = function() {
+    return frase.split("").reverse("").join("")
+}
+console.log(reverseString()) */
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
